@@ -1,1 +1,0 @@
-# wtharuki.github.io
