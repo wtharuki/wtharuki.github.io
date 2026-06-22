@@ -61,7 +61,7 @@
                   <strong>June 2026:</strong> Awarded five academic prizes at the <a href="https://www.pdn.ac.lk/">University of Peradeniya General Convocation 2026</a>.
                 </p>
                 <p>
-                  <strong>June 2026:</strong> "Time-History-Based Evaluation of Wind-Induced Serviceability Response in High-Rise Buildings" was accepted for presentation at <a href="https://ipurse.pdn.ac.lk/2026/">iPURSE 2026</a>.
+                  <strong>June 2026:</strong> "Time-History-Based Evaluation of Wind-Induced Serviceability Response in High-Rise Buildings" was accepted for oral presentation at <a href="https://ipurse.pdn.ac.lk/2026/">iPURSE 2026</a>.
                 </p>
               </td>
             </tr>
@@ -79,8 +79,28 @@
             <tr bgcolor="#ffffd0">
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
-                  <img src="images/zipmap.jpg" width="160" alt="Structural engineering research placeholder">
+                  <img id="paper1-slideshow" src="images/paper1/1.png" width="160" height="160" style="object-fit:contain;" alt="Performance-based wind design research">
                 </div>
+                <script type="text/javascript">
+                  (function () {
+                    const images = [
+                      'images/paper1/1.png',
+                      'images/paper1/2.png',
+                      'images/paper1/3.png'
+                    ];
+                    images.forEach(function (src) {
+                      const image = new Image();
+                      image.src = src;
+                    });
+
+                    let currentImage = 0;
+                    const slideshow = document.getElementById('paper1-slideshow');
+                    window.setInterval(function () {
+                      currentImage = (currentImage + 1) % images.length;
+                      slideshow.src = images[currentImage];
+                    }, 1000);
+                  }());
+                </script>
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <span class="papertitle">Towards a Performance-Based Wind Design Framework for High-Rise Buildings Using Time-History Analysis</span>
@@ -121,7 +141,9 @@
             <tr bgcolor="#ffffd0">
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
-                  <img src="images/blocknerf_before.jpg" width="160" alt="Wind engineering project placeholder">
+                  <video width="160" height="160" autoplay muted loop playsinline style="object-fit:cover;">
+                    <source src="images/PBD/vid1.mp4" type="video/mp4">
+                  </video>
                 </div>
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
@@ -139,8 +161,28 @@
             <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
-                  <img src="images/smerf.jpg" width="160" alt="High-rise serviceability project placeholder">
+                  <img id="highrise-slideshow" src="images/63story/1.png" width="160" height="160" style="object-fit:contain;" alt="63-storey high-rise serviceability assessment">
                 </div>
+                <script type="text/javascript">
+                  (function () {
+                    const images = [
+                      'images/63story/1.png',
+                      'images/63story/2.png',
+                      'images/63story/3.png'
+                    ];
+                    images.forEach(function (src) {
+                      const image = new Image();
+                      image.src = src;
+                    });
+
+                    let currentImage = 0;
+                    const slideshow = document.getElementById('highrise-slideshow');
+                    window.setInterval(function () {
+                      currentImage = (currentImage + 1) % images.length;
+                      slideshow.src = images[currentImage];
+                    }, 1000);
+                  }());
+                </script>
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <span class="papertitle">Serviceability Wind Assessment of a 63-Storey High-Rise</span>
@@ -157,7 +199,9 @@
             <tr bgcolor="#ffffd0">
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
-                  <img src="images/B3DO.jpg" width="160" alt="Bridge finite element model placeholder">
+                  <video width="160" height="160" autoplay muted loop playsinline style="object-fit:cover;">
+                    <source src="images/yaka/vd.mp4" type="video/mp4">
+                  </video>
                 </div>
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
@@ -175,8 +219,29 @@
             <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
-                  <img src="images/3DSP.jpg" width="160" alt="Soil-structure interaction project placeholder">
+                  <img id="sewer-slideshow" src="images/sewer/1.png" width="160" height="160" style="object-fit:contain;" alt="Sewer line finite element analysis">
                 </div>
+                <script type="text/javascript">
+                  (function () {
+                    const images = [
+                      'images/sewer/1.png',
+                      'images/sewer/2.png',
+                      'images/sewer/3.png',
+                      'images/sewer/4.png'
+                    ];
+                    images.forEach(function (src) {
+                      const image = new Image();
+                      image.src = src;
+                    });
+
+                    let currentImage = 0;
+                    const slideshow = document.getElementById('sewer-slideshow');
+                    window.setInterval(function () {
+                      currentImage = (currentImage + 1) % images.length;
+                      slideshow.src = images[currentImage];
+                    }, 1000);
+                  }());
+                </script>
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <span class="papertitle">Finite Element Analysis of an Existing Sewer Line under a Proposed Seven-Storey Raft Foundation</span>
@@ -347,7 +412,7 @@
               <td style="padding:0px">
                 <br>
                 <p style="text-align:right;font-size:small;">
-                  Tharuki Wijayarathne &nbsp;|&nbsp; Structural Engineering Research Portfolio
+                  Tharuki Wijayarathne &nbsp;|&nbsp; Contact me @ wtharuki[at]gmail[dot]com 
                 </p>
               </td>
             </tr>
