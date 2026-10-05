@@ -300,7 +300,34 @@
             </tr>
 
             <tr bgcolor="#ffffd0">
-              <td style="padding:16px;width:20%;vertical-align:middle"></td>
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <img id="chimney-slideshow" src="images/chimney/1.jpeg" width="160" height="160" style="object-fit:contain;" alt="Norochcholai composite chimney seismic analysis">
+                </div>
+                <script type="text/javascript">
+                  (function () {
+                    const images = [
+                      'images/chimney/1.jpeg',
+                      'images/chimney/2.jpeg',
+                      'images/chimney/3.jpeg',
+                      'images/chimney/4.jpeg',
+                      'images/chimney/5.jpeg',
+                      'images/chimney/6.jpeg'
+                    ];
+                    images.forEach(function (src) {
+                      const image = new Image();
+                      image.src = src;
+                    });
+
+                    let currentImage = 0;
+                    const slideshow = document.getElementById('chimney-slideshow');
+                    window.setInterval(function () {
+                      currentImage = (currentImage + 1) % images.length;
+                      slideshow.src = images[currentImage];
+                    }, 1000);
+                  }());
+                </script>
+              </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <span class="papertitle">Response Spectrum Seismic Analysis of a 146.5 m Composite Chimney, Norochcholai</span>
                 <br>
